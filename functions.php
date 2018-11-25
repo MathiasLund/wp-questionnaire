@@ -48,8 +48,8 @@ function add_our_pricing_posts(){
            if ( !post_type_exists( 'our_pricing_post' ) ) {
            register_post_type( 'our_pricing_post', $args );
             }
-                                 
- 
+
+
  }
 
 /************** custom admin pages  *************************/
@@ -69,7 +69,7 @@ function aad_save_metadata($aad_post_ID,$aad_key,$aad_value,$bool) {
 }
 add_action( 'save_post', 'aad_save_metadata' , 100 );
 function aad_new_pricing_table() {
-	
+
 global $wpdb;
 $post_id='1209';
 	if($_REQUEST['aad_action']=="update") {
@@ -169,7 +169,7 @@ aad_save_metadata($post_id,'featured_table',$_POST['featured_table'],true);
 	width:150px;
 }
 </style>
-<h1>Pricing Tables</h1>	
+<h1>Pricing Tables</h1>
 <div id="aad_pricing_table" >
 <form action="?page=pricing_page&aad_action=update" method="post">
 <div id="aad_pricing_div">

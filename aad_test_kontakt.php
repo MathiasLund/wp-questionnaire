@@ -112,8 +112,8 @@
 		<div class="outer_price">
 			<h2><?php echo get_post_meta($post_id,'aad_main_title',true); ?></h2>
 			<div class="three_price_blocks">
-			
-			
+
+
 				<div class="elem_of_p <?php if(get_post_meta($post_id,'featured_table',true)=='1') { echo "center_elpr"; } else { echo "control_pos"; } ?>">
 				<?php if(get_post_meta($post_id,'featured_table',true)=='1') { ?>
 					<div class="popl_price">
@@ -143,8 +143,8 @@
 				<?php } ?>
 				</div>
 
-				
-				
+
+
 				<div class="elem_of_p <?php if(get_post_meta($post_id,'featured_table',true)=='2') { echo "center_elpr"; } else { echo "control_pos"; } ?>">
 				<?php if(get_post_meta($post_id,'featured_table',true)=='2') { ?>
 					<div class="popl_price">
@@ -155,7 +155,7 @@
 					<div class="innter_cent_pack">
 				<?php } ?>
 						<h6><?php echo get_post_meta($post_id,'pricing_2_title',true); ?></h6>
-						
+
 				<?php if(get_post_meta($post_id,'featured_table',true)=='2') { ?>
 					<div class="pop_price">
 						<p><?php echo get_post_meta($post_id,'pricing_2_price',true); ?></p>
@@ -174,12 +174,12 @@
 					</div>
 				<?php } ?>
 				</div>
-				
-				
-				
-				
+
+
+
+
 		<div class="elem_of_p <?php if(get_post_meta($post_id,'featured_table',true)=='3') { echo "center_elpr"; } else { echo "control_pos"; } ?>">
-		
+
 				<?php if(get_post_meta($post_id,'featured_table',true)=='3') { ?>
 					<div class="popl_price">
 						<p><?php echo get_post_meta($post_id,'pricing_featured_3_title',true); ?></p>
@@ -207,9 +207,9 @@
 					</div>
 				<?php } ?>
 				</div>
-				
-				
-				
+
+
+
 			</div>
 		</div>
 	</div>

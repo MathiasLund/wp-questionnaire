@@ -1,12 +1,13 @@
 <?php /* Template Name: Kom Igang */ ?>
+<?php include ('config.php') ?>
 <?php get_header(); ?>
-	<link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/jevelin/aad_dir/css/style.css">
+	<link rel="stylesheet" href="<?php echo site_url(); ?>/aad_dir/css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/themes/jevelin/aad_dir/css/bootstrap-slider.css">
+	<link rel="stylesheet" href="<?php echo site_url(); ?>/aad_dir/css/bootstrap-slider.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" />
 </head>
 <body>
-	<form method="POST" enctype="multipart/form-data" action="https://app.zenfitapp.com/trainer/leadCreateQuery/674/da"  id="aad_form" >
+	<form method="POST" enctype="multipart/form-data" action="<?php echo trainer_url(); ?>"  id="aad_form" >
 	<input type="hidden" name="leadType" value="survey" />
 	<div class="first_form_tap">
 		<h2>Vælg dit køn</h2>
@@ -51,13 +52,13 @@
 		<div class="outer_third_butt">
 			<div data-val="1" onclick="set_primary_goal('1');" data-id="Vælg målsætning">
 				<div class="third_ch_img">
-					<img src="<?php echo site_url(); ?>/wp-content/themes/jevelin/aad_dir/img/ch1.png" alt="ch1">
+					<img src="<?php echo site_url(); ?>/aad_dir/img/ch1.png" alt="ch1">
 				</div>
 				<p>Jeg vil tabe mig</p>
 			</div>
 			<div data-val="1" onclick="set_primary_goal('2');" >
 				<div class="third_ch_img">
-					<img src="<?php echo site_url(); ?>/wp-content/themes/jevelin/aad_dir/img/ch2.png" alt="ch2">
+					<img src="<?php echo site_url(); ?>/aad_dir/img/ch2.png" alt="ch2">
 				</div>
 				<p>Bygge muskelmasse</p>
 			</div>
@@ -347,7 +348,7 @@
 	<div class="last_button">
 
 		<div class="wrap_last_b">
-			<button><img id="aad_loading" style="display:none;width:20px;margin: -5px 81px 0 -24px;" src="<?php echo site_url(); ?>/wp-content/themes/jevelin/aad_dir/img/loader.gif" /><span id="aad_before_loading">FÆRDIG, GÅ VIDERE <img src="<?php echo site_url(); ?>/wp-content/themes/jevelin/aad_dir/img/right_arr.png" alt="right_arr"></span></button>
+			<button><img id="aad_loading" style="display:none;width:20px;margin: -5px 81px 0 -24px;" src="<?php echo site_url(); ?>/aad_dir/img/loader.gif" /><span id="aad_before_loading">FÆRDIG, GÅ VIDERE <img src="<?php echo site_url(); ?>/aad_dir/img/right_arr.png" alt="right_arr"></span></button>
 			<div class="tooltip_block">
 				<p>Beklager, men du glemte at udfylde følgende spørgsmal korrekt:</p>
 			<ul>
@@ -364,6 +365,6 @@
 
 <script
 src="https://code.jquery.com/jquery-3.3.1.js" ></script>
-<script src="<?php echo site_url(); ?>/wp-content/themes/jevelin/aad_dir/js/bootstrap-slider.min.js"></script>
+<script src="<?php echo site_url(); ?>/aad_dir/js/bootstrap-slider.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
-<script src="<?php echo site_url(); ?>/wp-content/themes/jevelin/aad_dir/js/script.js"></script>
+<script src="<?php echo site_url(); ?>/aad_dir/js/script.js"></script>
